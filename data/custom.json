@@ -1,0 +1,198 @@
+[
+    {
+        "db_id": "StudentDB",
+        "query": "SELECT * FROM Students;",
+        "query_toks": ["SELECT", "*", "FROM", "Students", ";"],
+        "query_toks_no_value": ["select", "*", "from", "students", ";"],
+        "question": "Show all students with their details.",
+        "question_toks": ["Show", "all", "students", "with", "their", "details", "."],
+        "sql": {
+            "from": {
+                "table_units": [["table_unit", 1]],
+                "conds": []
+            },
+            "select": [],
+            "where": [],
+            "groupBy": [],
+            "having": [],
+            "orderBy": [],
+            "limit": null,
+            "intersect": null,
+            "union": null,
+            "except": null
+        }
+    },
+    {
+        "db_id": "StudentDB",
+        "query": "SELECT name, age FROM Students WHERE gender = 'Female';",
+        "query_toks": [
+            "SELECT",
+            "name",
+            ",",
+            "age",
+            "FROM",
+            "Students",
+            "WHERE",
+            "gender",
+            "=",
+            "'Female",
+            "'",
+            ";"
+        ],
+        "query_toks_no_value": [
+            "select",
+            "name",
+            ",",
+            "age",
+            "from",
+            "students",
+            "where",
+            "gender",
+            "=",
+            "value",
+            ";"
+        ],
+        "question": "List the names and ages of all female students.",
+        "question_toks": [
+            "List",
+            "the",
+            "names",
+            "and",
+            "ages",
+            "of",
+            "all",
+            "female",
+            "students",
+            "."
+        ],
+        "sql": {
+            "from": {
+                "table_units": [["table_unit", 1]],
+                "conds": []
+            },
+            "select": [],
+            "where": [],
+            "groupBy": [],
+            "having": [],
+            "orderBy": [],
+            "limit": null,
+            "intersect": null,
+            "union": null,
+            "except": null
+        }
+    },
+    {
+        "db_id": "StudentDB",
+        "query": "SELECT COUNT(*) FROM Attendance WHERE status = 'P';",
+        "query_toks": [
+            "SELECT",
+            "COUNT",
+            "(",
+            "*",
+            ")",
+            "FROM",
+            "Attendance",
+            "WHERE",
+            "status",
+            "=",
+            "'P",
+            "'",
+            ";"
+        ],
+        "query_toks_no_value": [
+            "select",
+            "count",
+            "(",
+            "*",
+            ")",
+            "from",
+            "attendance",
+            "where",
+            "status",
+            "=",
+            "value",
+            ";"
+        ],
+        "question": "How many students were present?",
+        "question_toks": [
+            "How",
+            "many",
+            "students",
+            "were",
+            "present",
+            "?"
+        ],
+        "sql": {
+            "from": {
+                "table_units": [["table_unit", 1]],
+                "conds": []
+            },
+            "select": [],
+            "where": [],
+            "groupBy": [],
+            "having": [],
+            "orderBy": [],
+            "limit": null,
+            "intersect": null,
+            "union": null,
+            "except": null
+        }
+    },
+    {
+        "db_id": "StudentDB",
+        "query": "SELECT name FROM Students ORDER BY age DESC LIMIT 5;",
+        "query_toks": [
+            "SELECT",
+            "name",
+            "FROM",
+            "Students",
+            "ORDER",
+            "BY",
+            "age",
+            "DESC",
+            "LIMIT",
+            "5",
+            ";"
+        ],
+        "query_toks_no_value": [
+            "select",
+            "name",
+            "from",
+            "students",
+            "order",
+            "by",
+            "age",
+            "desc",
+            "limit",
+            "value",
+            ";"
+        ],
+        "question": "List the names of the oldest 5 students.",
+        "question_toks": [
+            "List",
+            "the",
+            "names",
+            "of",
+            "the",
+            "oldest",
+            "5",
+            "students",
+            "."
+        ],
+        "sql": {
+            "from": {
+                "table_units": [["table_unit", 1]],
+                "conds": []
+            },
+            "select": [],
+            "where": [],
+            "groupBy": [],
+            "having": [],
+            "orderBy": [],
+            "limit": null,
+            "intersect": null,
+            "union": null,
+            "except": null
+        }
+    }
+]

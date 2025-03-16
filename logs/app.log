@@ -1,0 +1,199 @@
+2024-12-10 21:08:58,874 - ERROR - Database connection error: (pymysql.err.OperationalError) (1045, "Access denied for user 'ayushgupta'@'localhost' (using password: NO)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-10 21:09:04,239 - ERROR - Database connection error: (pymysql.err.OperationalError) (1045, "Access denied for user 'root'@'localhost' (using password: NO)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-10 21:09:11,063 - ERROR - Database connection error: 'NoneType' object has no attribute 'replace'
+2024-12-10 21:09:28,484 - INFO - Generating SQL query for: 'List all students'
+2024-12-10 21:09:29,795 - INFO - Generated SQL query: SELECT count(*) FROM students AS a t1 JOIN student_student_id WHERE T1.sema:
+2024-12-10 21:09:38,414 - INFO - Connecting to the database...
+2024-12-10 21:09:38,445 - INFO - Successfully connected to the database.
+2024-12-10 21:09:38,447 - ERROR - Error executing SQL query: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 't1 JOIN student_student_id WHERE T1.sema:' at line 1
+2024-12-10 21:10:16,155 - INFO - Feedback saved successfully.
+2024-12-10 21:20:46,812 - ERROR - Database connection error: (pymysql.err.OperationalError) (1045, "Access denied for user 'ayushgupta'@'localhost' (using password: NO)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-10 21:20:50,886 - ERROR - Database connection error: (pymysql.err.OperationalError) (1045, "Access denied for user 'root'@'localhost' (using password: NO)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-10 21:20:58,611 - ERROR - Database connection error: 'NoneType' object has no attribute 'replace'
+2024-12-10 21:21:15,576 - INFO - Generating SQL query for: 'list all students'
+2024-12-10 21:21:16,294 - INFO - Generated SQL query: SELECT count(*) FROM students
+2024-12-10 21:21:22,831 - INFO - Connecting to the database...
+2024-12-10 21:21:22,873 - INFO - Successfully connected to the database.
+2024-12-10 21:21:22,877 - INFO - SQL query executed successfully.
+2024-12-10 21:22:11,017 - INFO - Generating SQL query for: 'list all subjects'
+2024-12-10 21:22:12,093 - INFO - Generated SQL query: SELECT T1.Subject_Sema :
+2024-12-10 21:22:15,690 - INFO - Connecting to the database...
+2024-12-10 21:22:15,701 - INFO - Successfully connected to the database.
+2024-12-10 21:22:15,702 - ERROR - Error executing SQL query: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':' at line 1
+2024-12-10 21:22:36,577 - INFO - Generating SQL query for: 'list all students marks'
+2024-12-10 21:22:37,363 - INFO - Generated SQL query: SELECT count(*) FROM students
+2024-12-10 21:22:40,370 - INFO - Connecting to the database...
+2024-12-10 21:22:40,381 - INFO - Successfully connected to the database.
+2024-12-10 21:22:40,384 - INFO - SQL query executed successfully.
+2024-12-10 22:01:47,012 - ERROR - Database connection error: (pymysql.err.OperationalError) (1045, "Access denied for user 'ayushgupta'@'localhost' (using password: NO)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-10 22:01:53,847 - ERROR - Database connection error: (pymysql.err.OperationalError) (1045, "Access denied for user 'root'@'localhost' (using password: NO)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-10 22:01:56,442 - ERROR - Database connection error: 'NoneType' object has no attribute 'replace'
+2024-12-10 22:02:16,446 - INFO - Generating SQL query for: 'list all students
+'
+2024-12-10 22:02:17,797 - INFO - Generated SQL query: SELECT count(*) FROM students
+2024-12-10 22:02:21,947 - INFO - Connecting to the database...
+2024-12-10 22:02:21,976 - INFO - Successfully connected to the database.
+2024-12-10 22:02:21,980 - INFO - SQL query executed successfully.
+2024-12-10 22:05:36,045 - ERROR - Database connection error: (pymysql.err.OperationalError) (1045, "Access denied for user 'ayushgupta'@'localhost' (using password: NO)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-10 22:05:40,150 - ERROR - Database connection error: (pymysql.err.OperationalError) (1045, "Access denied for user 'root'@'localhost' (using password: NO)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-10 22:05:42,446 - ERROR - Database connection error: 'NoneType' object has no attribute 'replace'
+2024-12-10 22:05:55,544 - INFO - Generating SQL query for: 'list all students'
+2024-12-10 22:05:59,606 - INFO - Connecting to the database...
+2024-12-10 22:05:59,638 - INFO - Successfully connected to the database.
+2024-12-10 22:05:59,640 - INFO - SQL query executed successfully.
+2024-12-10 22:06:47,840 - INFO - Generating SQL query for: 'list all male students'
+2024-12-10 22:06:51,622 - INFO - Connecting to the database...
+2024-12-10 22:06:51,633 - INFO - Successfully connected to the database.
+2024-12-10 22:06:51,634 - INFO - SQL query executed successfully.
+2024-12-11 16:30:10,887 - ERROR - Database connection error: (pymysql.err.OperationalError) (1045, "Access denied for user 'ayushgupta'@'localhost' (using password: NO)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-11 16:30:14,371 - ERROR - Database connection error: (pymysql.err.OperationalError) (1045, "Access denied for user 'root'@'localhost' (using password: NO)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-11 16:30:22,584 - ERROR - Database connection error: 'NoneType' object has no attribute 'replace'
+2024-12-11 16:30:33,474 - INFO - Generating SQL query for: 'list all students'
+2024-12-11 16:30:37,042 - INFO - Connecting to the database...
+2024-12-11 16:30:37,100 - INFO - Successfully connected to the database.
+2024-12-11 16:30:37,101 - INFO - SQL query executed successfully.
+2024-12-11 16:30:50,454 - INFO - Generating SQL query for: 'list all male students'
+2024-12-11 16:30:54,330 - INFO - Connecting to the database...
+2024-12-11 16:30:54,341 - INFO - Successfully connected to the database.
+2024-12-11 16:30:54,343 - INFO - SQL query executed successfully.
+2024-12-12 12:11:12,586 - ERROR - Database connection error: (pymysql.err.OperationalError) (1045, "Access denied for user 'ayushgupta'@'localhost' (using password: NO)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-12 12:11:19,982 - ERROR - Database connection error: (pymysql.err.OperationalError) (1045, "Access denied for user 'root'@'localhost' (using password: NO)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-12 12:11:33,323 - ERROR - Database connection error: 'NoneType' object has no attribute 'replace'
+2024-12-12 12:12:04,859 - INFO - Generating SQL query for: 'list all students'
+2024-12-12 12:12:09,608 - INFO - Connecting to the database...
+2024-12-12 12:12:09,655 - INFO - Successfully connected to the database.
+2024-12-12 12:12:09,656 - INFO - SQL query executed successfully.
+2024-12-12 12:12:29,252 - INFO - Generating SQL query for: 'list all male students'
+2024-12-12 12:12:36,962 - INFO - Connecting to the database...
+2024-12-12 12:12:36,969 - INFO - Successfully connected to the database.
+2024-12-12 12:12:36,970 - INFO - SQL query executed successfully.
+2024-12-12 12:12:45,563 - INFO - Feedback saved successfully.
+2024-12-12 14:13:08,913 - ERROR - Database connection error: (pymysql.err.OperationalError) (1045, "Access denied for user 'ayushgupta'@'localhost' (using password: NO)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-12 14:13:11,725 - ERROR - Database connection error: (pymysql.err.OperationalError) (1045, "Access denied for user 'root'@'localhost' (using password: NO)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-12 14:13:16,396 - ERROR - Database connection error: 'NoneType' object has no attribute 'replace'
+2024-12-12 14:13:33,676 - INFO - Generating SQL query for: 'list all students'
+2024-12-12 14:13:41,886 - INFO - Connecting to the database...
+2024-12-12 14:13:41,947 - INFO - Successfully connected to the database.
+2024-12-12 14:13:41,949 - INFO - SQL query executed successfully.
+2024-12-12 14:18:56,056 - INFO - Generating SQL query for: 'list all male students'
+2024-12-12 14:19:03,618 - INFO - Connecting to the database...
+2024-12-12 14:19:03,659 - INFO - Successfully connected to the database.
+2024-12-12 14:19:03,660 - INFO - SQL query executed successfully.
+2024-12-12 14:19:33,397 - INFO - Generating SQL query for: 'list all male students'
+2024-12-12 16:34:41,282 - ERROR - Database connection error: (pymysql.err.OperationalError) (1045, "Access denied for user 'ayushgupta'@'localhost' (using password: NO)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-12 16:35:13,629 - ERROR - Database connection error: (pymysql.err.OperationalError) (1045, "Access denied for user 'root'@'localhost' (using password: NO)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-12 16:35:17,490 - ERROR - Database connection error: 'NoneType' object has no attribute 'replace'
+2024-12-12 16:35:30,679 - INFO - Generating SQL query for: 'list all students'
+2024-12-12 16:35:35,698 - INFO - Connecting to the database...
+2024-12-12 16:35:35,716 - INFO - Successfully connected to the database.
+2024-12-12 16:35:35,717 - INFO - SQL query executed successfully.
+2024-12-12 16:35:53,292 - INFO - Generating SQL query for: 'list all male students'
+2024-12-12 16:36:03,174 - INFO - Connecting to the database...
+2024-12-12 16:36:03,184 - INFO - Successfully connected to the database.
+2024-12-12 16:36:03,185 - INFO - SQL query executed successfully.
+2024-12-12 23:47:49,241 - ERROR - Database connection error: (pymysql.err.OperationalError) (1045, "Access denied for user 'ayushgupta'@'localhost' (using password: NO)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-12 23:47:53,107 - ERROR - Database connection error: (pymysql.err.OperationalError) (1045, "Access denied for user 'root'@'localhost' (using password: NO)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-12 23:47:59,576 - ERROR - Database connection error: 'NoneType' object has no attribute 'replace'
+2024-12-12 23:48:13,263 - INFO - Generating SQL query for: 'list all students
+'
+2024-12-12 23:48:13,263 - INFO - No rule matched. Using T5 model to generate SQL query.
+2024-12-12 23:48:14,694 - INFO - Generated SQL query: SELECT count(*) FROM students
+2024-12-12 23:48:34,288 - INFO - Generating SQL query for: 'list all male students
+'
+2024-12-12 23:48:34,289 - INFO - No rule matched. Using T5 model to generate SQL query.
+2024-12-12 23:48:34,749 - INFO - Generated SQL query: SELECT count(*) FROM students AS a 'Standard'
+2024-12-12 23:49:10,949 - INFO - Generating SQL query for: 'list all male students
+'
+2024-12-12 23:49:15,247 - INFO - Connecting to the database...
+2024-12-12 23:49:15,290 - INFO - Successfully connected to the database.
+2024-12-12 23:49:15,291 - INFO - SQL query executed successfully.
+2024-12-13 10:23:58,425 - ERROR - Database connection error: (pymysql.err.OperationalError) (1045, "Access denied for user 'ayushgupta'@'localhost' (using password: NO)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-13 11:03:56,044 - ERROR - Database connection error: 'NoneType' object has no attribute 'replace'
+2024-12-13 11:38:40,899 - INFO - Generating SQL query for: 'list all male students'
+2024-12-13 11:38:45,779 - INFO - Connecting to the database...
+2024-12-13 11:38:45,821 - INFO - Successfully connected to the database.
+2024-12-13 11:38:45,823 - INFO - SQL query executed successfully.
+2024-12-13 11:41:05,640 - ERROR - Database connection error: (pymysql.err.OperationalError) (1045, "Access denied for user 'ayushgupta'@'localhost' (using password: NO)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-13 11:43:56,854 - ERROR - Database connection error: (pymysql.err.OperationalError) (1045, "Access denied for user 'ayushgupta'@'localhost' (using password: NO)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-13 12:05:55,658 - ERROR - Database connection error: (pymysql.err.OperationalError) (1045, "Access denied for user 'ayushgupta'@'localhost' (using password: NO)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-13 12:29:04,159 - ERROR - Database connection error: (pymysql.err.OperationalError) (1045, "Access denied for user 'ayushgupta'@'localhost' (using password: NO)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-13 12:29:21,196 - ERROR - Database connection error: (pymysql.err.OperationalError) (1045, "Access denied for user 'root'@'localhost' (using password: NO)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-13 12:29:27,969 - ERROR - Database connection error: 'NoneType' object has no attribute 'replace'
+2024-12-13 12:30:20,364 - INFO - Generating SQL query for: 'lit all the students'
+2024-12-13 12:30:20,365 - INFO - No rule matched. Using T5 model to generate SQL query.
+2024-12-13 12:30:21,655 - INFO - Generated SQL query: SELECT count(*) FROM student AS a t1 JOIN student_employee_id WHERE T1.name = "SQL"
+2024-12-13 12:31:00,772 - INFO - Generating SQL query for: 'list all the students'
+2024-12-13 12:31:00,773 - INFO - No rule matched. Using T5 model to generate SQL query.
+2024-12-13 12:31:01,736 - INFO - Generated SQL query: SELECT count(*) FROM students
+2024-12-13 12:31:18,535 - INFO - Generating SQL query for: 'list all students'
+2024-12-13 12:31:39,687 - INFO - Connecting to the database...
+2024-12-13 12:31:39,734 - INFO - Successfully connected to the database.
+2024-12-13 12:31:39,735 - INFO - SQL query executed successfully.
+2025-03-16 17:37:06,314 - ERROR - Database connection error: (pymysql.err.OperationalError) (1045, "Access denied for user 'ayushgupta'@'localhost' (using password: NO)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-03-16 17:37:16,247 - ERROR - Database connection error: (pymysql.err.OperationalError) (1045, "Access denied for user 'root'@'localhost' (using password: NO)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-03-16 17:37:24,538 - ERROR - Database connection error: (pymysql.err.OperationalError) (1045, "Access denied for user 'root'@'localhost' (using password: NO)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-03-16 17:37:30,347 - ERROR - Database connection error: 'cryptography' package is required for sha256_password or caching_sha2_password auth methods
+2025-03-16 17:37:48,971 - ERROR - Database connection error: 'cryptography' package is required for sha256_password or caching_sha2_password auth methods
+2025-03-16 17:37:52,979 - ERROR - Database connection error: 'cryptography' package is required for sha256_password or caching_sha2_password auth methods
+2025-03-16 17:39:10,247 - ERROR - Database connection error: (pymysql.err.OperationalError) (1045, "Access denied for user 'ayushgupta'@'localhost' (using password: NO)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-03-16 17:39:17,508 - ERROR - Database connection error: (pymysql.err.OperationalError) (1045, "Access denied for user 'root'@'localhost' (using password: NO)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-03-16 17:39:22,368 - ERROR - Database connection error: (pymysql.err.OperationalError) (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-03-16 17:39:27,531 - ERROR - Database connection error: (pymysql.err.OperationalError) (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-03-16 17:39:44,746 - ERROR - Database connection error: (pymysql.err.OperationalError) (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-03-16 17:41:45,899 - INFO - Generating SQL query for: 'list all the students'
+2025-03-16 17:41:45,900 - INFO - No rule matched. Using T5 model to generate SQL query.
+2025-03-16 17:41:47,723 - INFO - Generated SQL query: SELECT count(*) FROM students
+2025-03-16 17:41:52,626 - INFO - Connecting to the database...
+2025-03-16 17:41:52,682 - INFO - Successfully connected to the database.
+2025-03-16 17:41:52,688 - INFO - SQL query executed successfully.
+2025-03-16 17:42:04,010 - INFO - Generating SQL query for: 'list all students'
+2025-03-16 17:42:08,202 - INFO - Connecting to the database...
+2025-03-16 17:42:08,214 - INFO - Successfully connected to the database.
+2025-03-16 17:42:08,216 - INFO - SQL query executed successfully.
+2025-03-16 17:44:09,896 - INFO - Generating SQL query for: 'list all students'
+2025-03-16 17:44:32,635 - INFO - Connecting to the database...
+2025-03-16 17:44:32,675 - INFO - Successfully connected to the database.
+2025-03-16 17:44:32,677 - INFO - SQL query executed successfully.
+2025-03-16 17:46:23,168 - ERROR - Database connection error: (pymysql.err.OperationalError) (1045, "Access denied for user 'ayushgupta'@'localhost' (using password: NO)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-03-16 17:46:27,066 - ERROR - Database connection error: (pymysql.err.OperationalError) (1045, "Access denied for user 'root'@'localhost' (using password: NO)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-03-16 17:46:35,839 - ERROR - Database connection error: 'NoneType' object has no attribute 'replace'
+2025-03-16 17:47:13,022 - INFO - Generating SQL query for: 'How me total number of orders '
+2025-03-16 17:47:13,024 - INFO - No rule matched. Using T5 model to generate SQL query.
+2025-03-16 17:47:14,391 - INFO - Generated SQL query: SELECT count(*) FROM Orders
+2025-03-16 17:47:20,189 - INFO - Connecting to the database...
+2025-03-16 17:47:20,204 - INFO - Successfully connected to the database.
+2025-03-16 17:47:20,209 - INFO - SQL query executed successfully.

@@ -1,0 +1,10 @@
+streamlit
+torch
+transformers
+mysql-connector-python
+pandas
+textblob
+mysql-connector-python
+pymysql
+sqlalchemy
+cryptography

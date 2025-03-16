@@ -1,0 +1,6 @@
+nl_query,sql_query
+list all students.,SELECT * FROM Students;
+Show all students with their details.,SELECT * FROM Students;
+List the names and ages of all female students.,"SELECT name, age FROM Students WHERE gender = 'Female';"
+How many students were present?,SELECT COUNT(*) FROM Attendance WHERE status = 'P';
+List the names of the oldest 5 students.,SELECT name FROM Students ORDER BY age DESC LIMIT 5;

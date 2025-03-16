@@ -1,0 +1,2 @@
+2024-12-10 21:10:16.143935,List all students,SELECT count(*) FROM students AS a t1 JOIN student_student_id WHERE T1.sema:,SELECT * FROM students,False
+2024-12-12 12:12:45.557047,list all mael studebts,SELECT * FROM Students WHERE gender = 'Male';,SELECT * FROM Students WHERE gender = 'Male';,True
