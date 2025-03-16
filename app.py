@@ -33,17 +33,19 @@ def save_feedback(nl_query, generated_sql, corrected_sql, success):
 def main():
     st.title("Natural Language to SQL Converter")
 
-    # Database connection configuration
+    # Sidebar - Database Configuration
     with st.sidebar:
         st.header("Database Connection")
+        db_type = st.selectbox("Select Database Type", ["MySQL", "PostgreSQL"])
         host = st.text_input("Host", "localhost")
         user = st.text_input("Username")
         password = st.text_input("Password", type="password")
         database = st.text_input("Database Name")
 
     try:
-        # Create a db_config dictionary
+        # Database configuration dictionary
         db_config = {
+            "db_type": db_type.lower(),  # MySQL or PostgreSQL
             "host": host,
             "user": user,
             "password": password,
@@ -51,21 +53,24 @@ def main():
         }
 
         # Initialize components
-        db_connector = DatabaseConnector(host, user, password, database)
+        db_connector = DatabaseConnector(**db_config)
         schema_extractor = SchemaExtractor(db_connector)
         spell_corrector = SpellCorrector()
         query_executor = QueryExecutor(model_paths={
-                                       "pretrained": "t5-small",  # Path to the pre-trained model
-                                       "finetuned": "models/t5_spider_finetuned"  # Path to the fine-tuned model
-                                        }, db_config=db_config)
+            "pretrained": "t5-small",
+            "finetuned": "models/t5_spider_finetuned"
+        }, db_config=db_config)
 
-        # Display schema in the sidebar
+        # Extract and display schema
         schema = schema_extractor.get_schema()
         st.sidebar.header("Database Schema")
-        for table, columns in schema.items():
-            st.sidebar.subheader(table)
-            for column in columns:
-                st.sidebar.write(f"- {column}")
+        if isinstance(schema, dict):  # Ensure schema is a dictionary
+            for table, columns in schema.items():
+                st.sidebar.subheader(table)
+                for column in columns:
+                    st.sidebar.write(f"- {column}")
+        else:
+            st.sidebar.write(schema)
 
         # Query input section
         st.header("Enter your question")
@@ -83,7 +88,7 @@ def main():
                     st.write(corrected_query)  # Display corrected query
 
                     # Generate SQL query using the corrected input
-                    sql_query = query_executor.generate_query(corrected_query)
+                    sql_query = query_executor.generate_query(corrected_query, schema)
 
                     # Store SQL query in session state
                     st.session_state['sql_query'] = sql_query
@@ -102,24 +107,24 @@ def main():
                 sql_query = st.session_state['sql_query']
 
                 # Get the database connection
-                connection = query_executor.connect_to_database()
-                if not connection:
-                    st.error("Failed to connect to the database.")
-                    return
+                with db_connector.get_connection() as connection:
+                    if not connection:
+                        st.error("Failed to connect to the database.")
+                        return
 
-                # Display SQL query before execution
-                st.subheader("Executing SQL Query")
-                st.code(sql_query, language="sql")
+                    # Display SQL query before execution
+                    st.subheader("Executing SQL Query")
+                    st.code(sql_query, language="sql")
 
-                # Execute the SQL query
-                success, results = query_executor.execute_query(connection, sql_query)
+                    # Execute the SQL query
+                    success, results = query_executor.execute_query(connection, sql_query)
 
-                # Display results
-                st.subheader("Query Results")
-                if not success or not results:
-                    st.warning("No results returned for the query.")
-                else:
-                    st.dataframe(results)
+                    # Display results
+                    st.subheader("Query Results")
+                    if not success or not results:
+                        st.warning("No results returned for the query.")
+                    else:
+                        st.dataframe(results)
 
             except Exception as e:
                 st.error(f"Error executing query: {str(e)}")
